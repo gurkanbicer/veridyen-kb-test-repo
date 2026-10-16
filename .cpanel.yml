@@ -1,5 +1,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=$HOME/public_html/
-    - /bin/cp -R src/. $DEPLOYPATH
+    - /bin/ln -s $HOME/repositories/laravel-app/public $HOME/public_html
